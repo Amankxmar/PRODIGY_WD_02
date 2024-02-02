@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background:linear-gradient(to right,  #3498db, white);
+}
+
+.hh{
+    font-family: 'Arial', sans-serif;
+    color:radiant;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #3498db, white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.hh:hover{
+    color:grey;
+}
+
+.stopwatch-container {
+    text-align: center;
+}
+
+.stopwatch {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.controls .btn.start {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.controls .btn.pause {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.controls .btn.reset {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.controls .btn.lap {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+.controls button:hover {
+    transform: scale(1.05);
+}
+
+.lap-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.lap-list li {
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.lap-list li:hover {
+    background-color: #d5dbdb;
+}
